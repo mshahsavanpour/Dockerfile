@@ -60,4 +60,6 @@ RUN yum -y update \
 
 CMD /usr/sbin/safe_asterisk
 
-
+# For Asterisk13
+#CMD ["/usr/sbin/asterisk", "-vvvvvvv"]
+#CMD ["/usr/sbin/asterisk", "-vvvdddf", "-T", "-W", "-U", "asterisk", "-p"]
